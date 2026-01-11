@@ -1,0 +1,88 @@
+[
+  {
+    "clip_id": "f99dde2c-01e3-45b7-9550-3836909417ec",
+    "url": "https://chatgpt.com/g/g-p-6923264eb758819188f437ca420e35d9-tinybrain-zuo-zhan-shi/c/69616d8c-53ac-8322-8952-680b85ddb1f9",
+    "title": "TinyBrain 作戦室 - Linuxインストール可能",
+    "domain": "chatgpt.com",
+    "selected_text": "RAG（Vector DB + Embedding）",
+    "user_note": "",
+    "captured_at": "2026-01-10T13:06:57.996Z",
+    "topic_tags": [
+      "design",
+      "ai"
+    ],
+    "content_type": "reference",
+    "summary": "RAG（Vector DB + Embedding）",
+    "confidence": 0.9,
+    "needs_review": false,
+    "classified_at": "2026-01-10T13:06:58.018Z"
+  },
+  {
+    "clip_id": "5167c354-d7ee-4a73-a547-8bb0cb5fc4ba",
+    "url": "https://platform.openai.com/api-keys",
+    "title": "API keys - OpenAI API",
+    "domain": "platform.openai.com",
+    "selected_text": "View usage per API key on the Usage page.",
+    "user_note": "api sample",
+    "captured_at": "2026-01-10T23:26:09.529Z",
+    "topic_tags": [
+      "ai"
+    ],
+    "content_type": "reference",
+    "summary": "View usage per API key on the Usage page.",
+    "confidence": 0.79,
+    "needs_review": false,
+    "classified_at": "2026-01-10T23:26:09.546Z"
+  },
+  {
+    "clip_id": "92ca2794-18e3-4ab9-a01b-b303b1906ded",
+    "url": "https://openai.com/ja-JP/api/",
+    "title": "API プラットフォーム | OpenAI",
+    "domain": "openai.com",
+    "selected_text": "OpenAI のプラットフォームで最先端の AI 製品を構築する",
+    "user_note": "",
+    "captured_at": "2026-01-10T23:26:53.900Z",
+    "topic_tags": [
+      "ai"
+    ],
+    "content_type": "reference",
+    "summary": "OpenAI のプラットフォームで最先端の AI 製品を構築する",
+    "confidence": 0.86,
+    "needs_review": false,
+    "classified_at": "2026-01-10T23:26:53.904Z"
+  },
+  {
+    "clip_id": "9a4a8858-b0d8-41b3-a13f-8c5b190e5c28",
+    "url": "https://www.msn.com/ja-jp/money/other/%E7%9B%B8%E7%B6%9A-%E9%9B%A2%E5%A9%9A-%E5%85%B1%E6%9C%89%E5%90%8D%E7%BE%A9%E3%81%AE%E4%B8%8D%E5%8B%95%E7%94%A3-%E4%BD%8F%E5%AE%85%E3%83%AD%E3%83%BC%E3%83%B3%E3%81%A7%E8%B5%B7%E3%81%93%E3%82%8B%E5%95%8F%E9%A1%8C%E3%81%A8%E3%81%AF/ar-AA1TXYyR?cvid=6962e067d64e4cafa31a845c2d5ee3ff&ei=14",
+    "title": "相続、離婚…共有名義の不動産・住宅ローンで起こる問題とは?",
+    "domain": "www.msn.com",
+    "selected_text": "相続、離婚…共有名義の不動産・住宅ローンで起こる問題とは?",
+    "user_note": "",
+    "captured_at": "2026-01-10T23:27:55.332Z",
+    "topic_tags": [
+      "general"
+    ],
+    "content_type": "reference",
+    "summary": "相続、離婚…共有名義の不動産・住宅ローンで起こる問題とは?",
+    "confidence": 0.81,
+    "needs_review": false,
+    "classified_at": "2026-01-10T23:27:55.336Z"
+  },
+  {
+    "clip_id": "ab9dee83-1e69-418c-b033-2cf3cd6515c6",
+    "url": "https://animestore.docomo.ne.jp/animestore/tp_pc",
+    "title": "dアニメストア | 初めての方は初月無料のアニメ見放題サイト！",
+    "domain": "animestore.docomo.ne.jp",
+    "selected_text": "あなたにおすすめのアニメ\n（24）",
+    "user_note": "",
+    "captured_at": "2026-01-10T23:28:49.557Z",
+    "topic_tags": [
+      "general"
+    ],
+    "content_type": "reference",
+    "summary": "あなたにおすすめのアニメ\n（24）",
+    "confidence": 0.82,
+    "needs_review": false,
+    "classified_at": "2026-01-10T23:28:49.562Z"
+  }
+]
