@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B2 Clips</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 320px;
+      min-height: 400px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 16px;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+
+    .header p {
+      font-size: 12px;
+      opacity: 0.9;
+    }
+
+    .main {
+      padding: 16px;
+      flex: 1;
+    }
+
+    .clip-form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    label {
+      font-size: 12px;
+      font-weight: 600;
+      color: #555;
+    }
+
+    .input-info {
+      font-size: 11px;
+      color: #888;
+      font-style: italic;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 13px;
+      font-family: inherit;
+      resize: vertical;
+      min-height: 60px;
+    }
+
+    textarea:focus {
+      outline: none;
+      border-color: #667eea;
+    }
+
+    .btn {
+      padding: 10px 16px;
+      border: none;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .btn-primary {
+      background: #667eea;
+      color: white;
+    }
+
+    .btn-primary:hover:not(:disabled) {
+      background: #5568d3;
+      transform: translateY(-1px);
+    }
+
+    .btn-primary:disabled {
+      background: #ccc;
+      cursor: not-allowed;
+    }
+
+    .status {
+      padding: 8px 12px;
+      border-radius: 4px;
+      font-size: 12px;
+      text-align: center;
+      margin-top: 8px;
+    }
+
+    .status.success {
+      background: #d4edda;
+      color: #155724;
+      border: 1px solid #c3e6cb;
+    }
+
+    .status.error {
+      background: #f8d7da;
+      color: #721c24;
+      border: 1px solid #f5c6cb;
+    }
+
+    .status.info {
+      background: #d1ecf1;
+      color: #0c5460;
+      border: 1px solid #bee5eb;
+    }
+
+    .page-info {
+      background: white;
+      padding: 12px;
+      border-radius: 6px;
+      margin-bottom: 12px;
+      border: 1px solid #e0e0e0;
+    }
+
+    .page-info-title {
+      font-size: 12px;
+      font-weight: 600;
+      color: #667eea;
+      margin-bottom: 4px;
+    }
+
+    .page-info-url {
+      font-size: 11px;
+      color: #888;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .selection-preview {
+      background: #f9f9f9;
+      padding: 8px;
+      border-left: 3px solid #667eea;
+      font-size: 11px;
+      color: #666;
+      max-height: 80px;
+      overflow-y: auto;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>📎 B2 Clips</h1>
+      <p>AI-powered web clipper</p>
+    </div>
+
+    <div class="main">
+      <div class="page-info" id="pageInfo">
+        <div class="page-info-title" id="pageTitle">Loading...</div>
+        <div class="page-info-url" id="pageUrl"></div>
+      </div>
+
+      <form class="clip-form" id="clipForm">
+        <div class="form-group">
+          <label>Selected Text</label>
+          <div class="selection-preview" id="selectedText">
+            <em>No text selected</em>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="userNote">Your Note (Optional)</label>
+          <textarea 
+            id="userNote" 
+            placeholder="Add your thoughts, context, or why this is important..."
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" id="saveBtn">
+          💾 Save Clip
+        </button>
+      </form>
+
+      <div id="status" style="display: none;"></div>
+    </div>
+  </div>
+
+  <script type="module" src="./popup.ts"></script>
+</body>
+</html>

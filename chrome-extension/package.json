@@ -1,0 +1,19 @@
+{
+  "name": "chrome-extension",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite build --watch --mode development",
+    "build": "tsc && vite build && node -e \"require('fs').cpSync('public/icons', 'dist/icons', {recursive: true})\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "shared": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.278",
+    "typescript": "^5.9.3",
+    "vite": "^6.0.3",
+    "vite-plugin-web-extension": "^4.3.0"
+  }
+}

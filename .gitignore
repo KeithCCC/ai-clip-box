@@ -1,0 +1,51 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Build outputs
+dist/
+build/
+*.tsbuildinfo
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Storage (user data)
+storage/*.json
+storage/*.md
+!storage/.gitkeep
+
+# Chrome extension artifacts
+chrome-extension/dist/
+chrome-extension/*.crx
+chrome-extension/*.pem
+
+# Testing
+coverage/
+.pytest_cache/

@@ -1,0 +1,5 @@
+packages:
+  - 'chrome-extension'
+  - 'ingest-api'
+  - 'review-ui'
+  - 'shared'

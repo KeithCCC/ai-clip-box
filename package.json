@@ -1,0 +1,30 @@
+{
+  "name": "ai-clip-box",
+  "version": "0.1.0",
+  "description": "AI Web Clipping Review Assistant",
+  "private": true,
+  "workspaces": [
+    "chrome-extension",
+    "ingest-api",
+    "review-ui",
+    "shared"
+  ],
+  "scripts": {
+    "dev:extension": "pnpm --filter chrome-extension dev",
+    "dev:api": "pnpm --filter ingest-api dev",
+    "dev:ui": "pnpm --filter review-ui dev",
+    "build:extension": "pnpm --filter chrome-extension build",
+    "build:api": "pnpm --filter ingest-api build",
+    "build:ui": "pnpm --filter review-ui build",
+    "build:all": "pnpm -r build",
+    "typecheck": "pnpm -r typecheck"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}
